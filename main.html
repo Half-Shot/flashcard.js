@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Flash Card Generator</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+     <div class="btn-toolbar">
+       <div class="btn-group">
+         <button type="button" id="subject" class="btn btn-default dropdown-toggle" data-toggle="dropdown">SUBJECT</button>
+         <ul class="dropdown-menu" id="subject-menu" role="menu">
+         </ul>
+       </div>
+       <div class="btn-group">
+         <button type="button" id="topic" class="btn btn-default dropdown-toggle" data-toggle="dropdown">TOPIC</button>
+         <ul class="dropdown-menu" id="topic-menu" role="menu">
+         </ul>
+       </div>
+      </div>
+     </div>
+    <div class="panel-body">
+     <div class="jumbotron">
+     <h1 id="question-title">TITLE</h1>
+     <p id="question-info">...</p>
+     <p><a class="btn btn-primary btn-lg" onclick="showAnswer();" role="button">Flip Card</a></p>
+     </div>
+    </div>
+    <div class="panel-footer">
+     <div class="btn-group">
+         <button type="button" onclick="previousCard();" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button>
+         <button type="button" onclick="randomCard();" class="btn btn-default"><span class="glyphicon glyphicon-repeat"></span></button>
+         <button type="button" onclick="nextCard();" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="js/flashcard.js" type="text/javascript"></script>
+</body>
+</html>
