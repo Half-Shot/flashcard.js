@@ -10,15 +10,13 @@ Simply open the file js/cards.json.
 
 A question is structured like so:
 
-'''
-{
-"question":"QuestionA", #Your question 
-"description":"Description of QuestionA", #Additional stuff. Supports HTML
-"answer":"42", #The answer
-"answerext":"Extended Answer Stuff" #Addition answery stuff
-}
-'''
-
+    {
+    "question":"QuestionA", #Your question 
+    "description":"Description of QuestionA", #Additional stuff. Supports HTML
+    "answer":"42", #The answer
+    "answerext":"Extended Answer Stuff" #Addition answery stuff
+    }
+    
 The structure of the document is a bit simpler
 It goes Object -> Array -> Object.
 
